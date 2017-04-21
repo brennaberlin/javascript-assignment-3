@@ -1,24 +1,17 @@
 // Do your work in this file.
 
-var view = document.createElement("div_view");
-view.className = "div_view";
-document.body.appendChild(div_view);
+var sky = document.createElement("div");
+sky.className = "view";
+document.body.appendChild (sky);
 
-var div_grass = document.createElement("grass");
+var grass = document.createElement("div");
 grass.className = "grass";
-document.body.appendChild(view);
+sky.appendChild(grass);
 
-var sun = document.createElement("sun");
-sun.className = "sun";
-doument.body.appendChild(view);
+var sun = document.createElement("div");
+sun.className="sun";
 
-var mountain = document.createElement("mountain");
-mountain.className = "mountain";
-document.body.appendChild(view);
 
-var mountain-top = document.createElement("mountain-top");
-mountain-top.className = "mountain-top";
-document.body.appendChild(mountain)
 
 
 // var div_grass = "<div class='grass'></div>";
