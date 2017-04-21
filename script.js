@@ -1,41 +1,40 @@
 // Do your work in this file.
+var div_view = document.createElement("div");
+div_view.className += "view";
+document.body.appendChild(div_view);
 
-var sky = document.createElement("div");
-sky.className = "view";
-document.body.appendChild (sky);
+var view_map = document.getElementsByClassName("view")[0];
+var div_grass = document.createElement("div");
+div_grass.className += "grass";
+view_map.appendChild(div_grass);
 
-var grass = document.createElement("div");
-grass.className = "grass";
-sky.appendChild(grass);
+var div_sun = document.createElement("div");
+div_sun.className += "sun";
+view_map.appendChild(div_sun);
 
-var sun = document.createElement("div");
-sun.className="sun";
-
-
-
-
-// var div_grass = "<div class='grass'></div>";
-// document.getElementsByClassName("view").appendChild(div_grass);
-
-// var div_sun = "<div class='sun'></div>";
-// document.getElementsByClassName("grass").appendChild(div_sun);
-
-var i = 0;
+var sun_map = document.getElementsByClassName("sun")[0];
+i = 0;
 while (i < 5) {
-    var div_loop = "<div class=ray-" + (i + 1) + "></div>";
-    document.getElementsByClassName("sun").appendChild(div_loop);
-    i++;
+var loop = document.createElement("div");
+  loop.className += "ray-" + (i + 1);
+  sun_map.appendChild(loop);
+  i++;
 }
 
-// var div_mountain = "<div class='mountain'></div>";
-// document.getElementsByClassName("view").appendChild(div_mountain);
+var div_mountain = document.createElement("div");
+div_mountain.className += "mountain";
+view_map.appendChild(div_mountain);
 
-// var div_mountaintop = "<div class='mountain-top'></div>";
-// document.getElementsByClassName("mountain").appendChild(div_mountaintop);
+var mountain_map = document.getElementsByClassName("mountain")[0];
+var div_mountain_top = document.createElement("div");
+div_mountain_top.className += "mountain-top";
+mountain_map.appendChild(div_mountain_top);
 
+var mountain_top_map = document.getElementsByClassName("mountain-top")[0];
 var k = 0;
 do {
-    var div_do = "<div class=mountain-cap" + (k + 1) + "></div>";
-    document.getElementsByClassName("mountain-top").appendChild(div_do);
-    k++;
-} while (k < 3);
+  var div_mountain_cap = document.createElement("div");
+  div_mountain_cap.className += "mountain-cap-" + (k + 1);
+  mountain_top_map.appendChild(div_mountain_cap);
+  k++;
+} while(k < 3);
